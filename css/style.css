@@ -1,0 +1,252 @@
+/* CSS reset */
+* {
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 50px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar :logo and image */
+#logo {
+    margin: 5x 34px;
+}
+
+#logo img {
+
+    height: 65px;
+    width: 55px;
+    margin: 13px 33px;
+}
+
+/*Navigation Bar: List styling */
+#navbar {
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar li {
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(255, 138, 138);
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 448px;
+    justify-content: center;    
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(..//img/Photo1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 560px;
+    width: 100%;
+    z-index: -1;
+    opacity: .94;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+
+}
+
+#home p {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Utility Classes */
+
+.h-primary {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 3.7rem;
+    padding: 20px;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    margin: 18px;
+    border-radius: 10px;
+    padding: 10px 24px;
+    border: 2px solid rgb(223, 217, 217);
+    background-color: rgb(252, 43, 43);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(128, 37, 37);
+}
+
+/* Services Section */
+
+.h-secondary center {
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.center {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 14px;
+    margin-top: 16px;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+
+#services .box {
+    background-color: rgb(212, 206, 206);
+    border: 2px solid rgb(248, 89, 89);
+    width: 390px;
+    margin: 3px 5px;
+    border-radius: 23px;
+    padding: 12px;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 110px;
+    margin-top: 10px;
+
+}
+
+#services p {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+/* client section */
+
+#clients-section {
+    position: relative;
+}
+
+#clients-section::before {
+    content: "";
+    position: absolute;
+    background: url(..//img/vegetables-1085063_1280.jpg) center;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: .67;
+}
+
+#clients {
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    padding: 20px;
+    height: 100px;
+}
+
+/* contact section */
+
+#contact {
+    font-family: 'Baloo Bhai 2', cursive;
+    position: relative;
+}
+
+#contact::before {
+    background: url(../img/photo3.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#contact-box form {
+    width: 60%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: .8rem;
+
+}
+
+/* Footer styling */
+
+footer {
+
+    background: black;
+    color: white;
+    padding: 1px;
+    ;
+}
